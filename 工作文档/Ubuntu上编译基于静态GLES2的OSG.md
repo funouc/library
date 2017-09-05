@@ -27,4 +27,4 @@ sh ./configure --prefix=/home/apple/Fun/3rdparty/ --disable-shared --enable-stat
 
 ## 遇到的问题及解决思路方法
 - GLUint64类型错误  
-首先，其中这个[网站](http://forum.openscenegraph.org/viewtopic.php?t=15102)上的解决方案就是现在OSG3.4的版本；所以暂时确认问题出在src/osg/GL.in文件中，通过cmake配置后GL.in会生成解决方案中include/osg/GL头文件；现在暂时的处理方法是先将GL.in中的#cmakedefine GL_HEADER_HAS_GLUINT64 这两句注释，暂时编译过去，具体问题还要继续深究。
+首先，其中这个[网站](http://forum.openscenegraph.org/viewtopic.php?t=15102)上的解决方案就是现在OSG3.4的版本；所以暂时确认问题出在src/osg/GL.in文件中，通过cmake配置后GL.in会生成解决方案中include/osg/GL头文件；现在暂时的处理方法是先将GL.in中的#cmakedefine GL_HEADER_HAS_GLUINT64 这两句注释，暂时编译过去，具体问题后续再说。紧接着
