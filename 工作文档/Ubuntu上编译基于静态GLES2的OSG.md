@@ -57,3 +57,7 @@ sh ./configure --prefix=/home/apple/Fun/3rdparty/ --disable-shared --enable-stat
 #endif
 ```
 所以当我们使用的Jpeg版本大于9的话，则不能typedef int boolean定义。
+- freetype库问题，具体报错如下：![image](file:///F:/img/freetype.jpg)  
+解决办法：重新编译freetype，添加configure参数 --without-bzip2
+ - libosgViewerd.a的x11错误，应该是GLES2库的问题，具体问题报错如下：![image](file:///F:/img/x11.jpg)
+ 首先，这个版本的OSG并不需要视窗系统支持，所以OSG_WINDOWING_SYSTEM设置为None，此时编译application里面的程序只会编译osgVersiond和osgPresent3D，但是osgPresent3D会报错，如下图所示：![image](file:///F:/img/present.jpg)根据提示，则将present3D.cpp中120行注释，重新编译通过。
