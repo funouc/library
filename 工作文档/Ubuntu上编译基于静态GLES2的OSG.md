@@ -41,7 +41,7 @@ sh ./configure --prefix=/home/apple/Fun/3rdparty/ --disable-shared --enable-stat
 所以暂时确认问题出在src/osg/GL.in文件中，通过cmake配置后GL.in会生成解决方案中include/osg/GL头文件；现在暂时的处理方法是先将GL.in中的#cmakedefine GL_HEADER_HAS_GLUINT64 这两句注释，暂时编译过去，具体问题后续再说。
 - 配置NacL版本的GLES2库  
 此处采用网上下载的pepper49中的OpenGLES2库，具体配置如下图示意：
-![image](http://i.imgur.com/UKhrRrK.jpg)  
+![image](http://ovybirdvz.bkt.clouddn.com/cmake1.JPG)  
 ![image](file:///F:/img/cmake2.jpg)
 - 在编译的时候遇到如下jpeg报错，使用的是jpeg-9a版本
 ![image](file:///F:/img/jpeg.jpg)  
