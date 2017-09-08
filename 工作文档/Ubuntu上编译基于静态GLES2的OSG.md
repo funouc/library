@@ -34,7 +34,7 @@ sh ./configure --prefix=/home/apple/Fun/3rdparty/ --disable-shared --enable-stat
 最终通过使用2.2.1版本解决问题
 - sqlite  
 
-## 遇到的问题及解决思路方法
+## OSG遇到的问题及解决思路方法
 
 - GLUint64类型错误  
 首先，其中这个[网站](http://forum.openscenegraph.org/viewtopic.php?t=15102)上的解决方案就是现在OSG3.4的版本;
@@ -61,3 +61,5 @@ sh ./configure --prefix=/home/apple/Fun/3rdparty/ --disable-shared --enable-stat
 解决办法：重新编译freetype，添加configure参数 --without-bzip2
  - libosgViewerd.a的x11错误，应该是GLES2库的问题，具体问题报错如下：![image](file:///F:/img/x11.jpg)
  首先，这个版本的OSG并不需要视窗系统支持，所以OSG_WINDOWING_SYSTEM设置为None，此时编译application里面的程序只会编译osgVersiond和osgPresent3D，但是osgPresent3D会报错，如下图所示：![image](file:///F:/img/present.jpg)根据提示，则将present3D.cpp中120行注释，重新编译通过。
+
+ ## osgEarth遇到的问题
