@@ -1,2 +1,4 @@
 #vscode 配置文件
 /.vscode/
+#markdown 配置
+.markdownlint.json
