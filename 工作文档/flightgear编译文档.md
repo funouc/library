@@ -1,0 +1,2 @@
+# flightgear编译整理
+1、[flightgear](http://www.flightgear.org/)项目托管在SourceForge而不是github，原因是（Sourceforge has been chosen for a host of the FGDATA repo, among other considerations, due to its large size (currently at 1.3G)）,应该是github空间太小了？
