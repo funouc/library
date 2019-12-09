@@ -1,1 +1,1 @@
-http://www.voidcn.com/article/p-ghlicjnm-bpx.html Qt中Q_D 设计模式简单总结
+http://www.voidcn.com/article/p-ghlicjnm-bpx.html Qt中Q_D 设计模式简单总结 test
