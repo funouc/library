@@ -1,0 +1,22 @@
+1、ofstream 拷贝构造函数问题，gcc4.9以下和5.0以上不同
+2、ConfigManager.cpp:62,GetPrivateProfileString 未解决；
+4、gpc.c
+5、GVThreadPool.cpp 中关于Thread问题
+GxSDK中的问题：
+GxGroupItem.cpp
+GxJBItem.cpp
+GxLocalPositionItem.cpp
+GxPloygonItem.cpp:36  GVGraphicScene 项目中PloygonItem类update
+GxPloylineItem.cpp 同上述
+GxRadarUnionEnvItem.cpp 头文件
+GxSceneItem.cpp
+GVGraphicScene:WkWarningItem.cpp:中中关于stringstream ，龙芯中keyboard程序的错误；
+new:
+GxItemRegistry.cpp
+GxSceneLayer.cpp
+GxAnnoSymbol.cpp
+GxWkStatelliteOrbitItem.cpp
+GxSceneItem.cpp
+GxJBItem.cpp
+GxGroupItem.cpp
+

@@ -1,0 +1,2 @@
+1、ofstream 拷贝构造函数问题，gcc4.9以下和5.0以上不同
+2d7eac1e76707a35efc192e0146daaf170aaffbf
